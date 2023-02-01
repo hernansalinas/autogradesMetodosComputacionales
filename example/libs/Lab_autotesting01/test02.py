@@ -11,7 +11,7 @@ config_ = add_configurations()
 config_.append_function_values("testOneValuesFunction.test_Expectedvalue",\
                         "Crear una funcion que multiplique dos números", \
                         -1/2*2/5,\
-                        ("mul_lambda",[-1,2/5]) ,\
+                        ("mul_lambda",[-1/2,2/5]) ,\
                         False)
 
 
