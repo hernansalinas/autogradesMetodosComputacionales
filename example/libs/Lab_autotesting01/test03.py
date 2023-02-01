@@ -18,7 +18,7 @@ try :
 
   config_.append_function_values("testOneValuesFunction.test_Expectedvaluevalue",\
                           "Determinar el conjugado de w", \
-                          w.conjugate,\
+                          w.conjugate(),\
                           ("w_con",[]),\
                           True)
 except:
