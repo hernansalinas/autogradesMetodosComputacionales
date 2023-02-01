@@ -49,4 +49,4 @@ try:
   runTest_v1(config_)
 
 except:
-  print(L no esta definida)
+  print("L no esta definida")
