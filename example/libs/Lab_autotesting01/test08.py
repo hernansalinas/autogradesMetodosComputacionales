@@ -18,28 +18,29 @@ config_.append_function("testOneOneFunction.test_Equalfunctions",\
                       ("pi_number_expected",[1000]),\
                       ("pi_number",[1000]) ,\
                       True, "")
-try:
-  config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                            "Prueba para valores negativos ", \
-                            type("a"),\
-                            type(pi_number(-1)),\
-                            "pi_number",\
-                            True)
+
+config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
+                          "Prueba para valores negativos ", \
+                          type("a"),\
+                          type(pi_number(-1)),\
+                          "pi_number",\
+                          True)
 
 # Otra forma de hacer el test
-  config_.append_variables_values("testOneValuesVariables.test_AlmostEqual",\
-                            "Prueba de la funcion comparando con el valor esperado sin funcion", \
-                            np.pi,\
-                            pi_number(100),\
-                            "pi_number",\
-                            True,"El valor para el 10000 termino no tiene la presicion esperada")
-  runTest_v1(config_)
+# try:
+#   config_.append_variables_values("testOneValuesVariables.test_AlmostEqual",\
+#                             "Prueba de la funcion comparando con el valor esperado sin funcion", \
+#                             np.pi,\
+#                             pi_number(100),\
+#                             "pi_number",\
+#                             True,"El valor para el 10000 termino no tiene la presicion esperada")
+runTest_v1(config_)
 
 
 
-except:
+#except:
   
-  print("La funcion pi_number no esta definida")
+#  print("La funcion pi_number no esta definida")
 
 
 
