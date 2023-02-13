@@ -1,6 +1,52 @@
+
+import numpy as np
+import math as mt
 config_ = add_configurations()
-config_.append_("testVariable.test_Equalint","Definir x como un numero entero", "x", False,"Recuerde definir el tipo adecuado empleando el metodo int")
-config_.append_("testVariable.test_Equalfloat","Defiir y como una variable tipo float", "y", False,"Recuerde definir el tipo adecuado empleando el metodo float")
-config_.append_("testVariable.test_Equalstring","Definir z como un string", "z", False,"Recuerde definir el tipo adecuado emplando dobles o simples comillas")
-runTest_v1(config_)
+
+
+
+
+try:
+  config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
+                            "Calcular  el  factorial de un número entero ", \
+                            mt.factorial(8),\
+                            factorial(8),\
+                            "factorial",\
+                            False)
+                            
+
+  config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
+                          "Prueba para valores negativos ", \
+                          type("a"),\
+                          type(factorial(-1)),\
+                          "factorial",\
+                          True)
+
+
+  config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
+                          "Prueba para valores reales ", \
+                          type("a"),\
+                          type(factorial(1.2)),\
+                          "factorial",\
+                          True)
+
+
+  config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
+                          "Prueba para el factorial de 0 ", \
+                          mt.factorial(0),\
+                          factorial(0),\
+                          "factorial",\
+                          True)
+
+
+
+
+  runTest_v1(config_)
+
+
+except:
+  print("La función no ha sido definda o el numero de argumento no es el adecuado")
+  
+  #runTest_v1(config_)
+
 
