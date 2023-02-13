@@ -1,15 +1,52 @@
+
 import numpy as np
 import math as mt
 config_ = add_configurations()
 
-# Una forma de hacer el test
-#Puede ser consultada a ataves de una pi para no exponerla a los
-#estudiantes
 
 
-config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
+
+try:
+  config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
+                            "Calcular  el  factorial de un número entero ", \
+                            mt.factorial(8),\
+                            factorial(8),\
+                            "factorial",\
+                            False)
+                            
+
+  config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
                           "Prueba para valores negativos ", \
-                          mt.factorial(50),\
-                          factorial(50),\
+                          type("a"),\
+                          type(factorial(-1)),\
                           "factorial",\
                           True)
+
+
+  config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
+                          "Prueba para valores reales ", \
+                          type("a"),\
+                          type(factorial(1.2)),\
+                          "factorial",\
+                          True)
+
+
+  config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
+                          "Prueba para valores negativos ", \
+                          mt.factorial(0),\
+                          factorial(0),\
+                          "factorial",\
+                          True)
+
+
+
+
+  runTest_v1(config_)
+
+
+except:
+  print("La función no ha sido definda o el numero de argumento no es el adecuado")
+  exit(0)
+  #runTest_v1(config_)
+
+
