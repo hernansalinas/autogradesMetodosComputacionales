@@ -46,7 +46,7 @@ try:
 
 except:
   print("La función no ha sido definda o el numero de argumento no es el adecuado")
-  exit(0)
+#  exit(0)
   #runTest_v1(config_)
 
 
