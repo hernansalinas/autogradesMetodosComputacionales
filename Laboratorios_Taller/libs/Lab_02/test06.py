@@ -8,10 +8,10 @@ config_ = add_configurations()
 
 try:
     config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                            "Números abundantes, la variable debe ser booleana  ", \
+                            "Números primos, la variable debe ser booleana  ", \
                             type(True),\
-                            type(numeros_abundantes(8)),\
-                            "numeros_abundantes",\
+                            type(numeros_primos(8)),\
+                            "numeros_primos",\
                             False)
                             
     
@@ -25,20 +25,20 @@ try:
    
     index = random.choice(range(len(ND)))
     config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                        f"Comprobando si el número {ND[index]} es abundantes   ", \
+                        f"Comprobando si el número {ND[index]} es primos   ", \
                         True,\
-                        numeros_abundantes(ND[index]),\
-                        "numeros_abundantes",\
+                        numeros_primos(ND[index]),\
+                        "numeros_primos",\
                         False)
 
     NND = np.array([1,6,8,12,24,36,42,50])
     index_ = random.choice(range(len(NND)))
 
     config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                            f"Comprobando si el {NND[index_]} es un número  abundantes   ", \
+                            f"Comprobando si el {NND[index_]} es un número  primos   ", \
                             False,\
-                            numeros_abundantes(NND[index_]),\
-                            "numeros_abundantes",\
+                            numeros_primos(NND[index_]),\
+                            "numeros_primos",\
                             False)
 
 
