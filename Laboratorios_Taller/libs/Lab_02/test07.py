@@ -9,10 +9,10 @@ config_ = add_configurations()
 
 try:
     config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                            "Números semiperfectos, la variable debe ser booleana  ", \
+                            "Números amigos, la variable debe ser booleana  ", \
                             type(True),\
-                            type(numeros_semiperfectos(220,284)),\
-                            "numeros_semiperfectos",\
+                            type(numeros_amigos(220,284)),\
+                            "numeros_amigos",\
                             False)
                             
     
@@ -23,18 +23,18 @@ try:
     config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
                         f"Comprobando si el número {NA[index]} es amigo   ", \
                         True,\
-                        numeros_semiperfectos(*NA[index]),\
-                        "numeros_semiperfectos",\
+                        numeros_amigos(*NA[index]),\
+                        "numeros_amigos",\
                         False)
 
     NND=[(22, 24), (118, 110), (620, 292), (520, 564), (622, 68), (144, 156), (170, 196), (62, 50), (152, 64), (83, 52)]
     index_ = random.choice(range(len(NND)))
 
     config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                            f"Comprobando si  {NND[index_]} no es un número es amigo   ", \
+                            f"Comprobando si  {NND[index_]} no es un número  amigo   ", \
                             False,\
-                            numeros_semiperfectos(*NND[index_]),\
-                            "numeros_semiperfectos",\
+                            numeros_amigos(*NND[index_]),\
+                            "numeros_amigos",\
                             False)
 
 

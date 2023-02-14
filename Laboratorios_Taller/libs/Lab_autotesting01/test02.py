@@ -1,46 +1,24 @@
-
-import random
-import numpy as np
-import math as mt
 config_ = add_configurations()
 
 
+#mul_lambda_testing_=lambda x, y: x*y
+# config_.append_function("testOneOneFunction.test_Equalfunctions",\
+#                         "Crear una funcion que multiple dos numeros", \
+#                         ("mul_lambda",[5,10]),\
+#                         ("mul_lambda_testing_",[5,10]) ,\
+#                         False, "Esto es un ayuda")
 
-
-try:
-    config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                            "Números defectivos, la variable debe ser booleana  ", \
-                            type(True),\
-                            type(numeros_defectivos(8)),\
-                            "numeros_defectivos",\
-                            False)
-                            
-    
-    
-    ND = np.array([1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 21, 22, 23, 25, 26, 27, 29, 31, 32 , 33, 34, 35, 37, 38, 39, 41, 43, 44, 45, 46, 47, 49, 50])
-    index = random.choice(range(len(ND)))
-    config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                        f"Comprobando si el número {ND[index]} es defectivo   ", \
-                        True,\
-                        numeros_defectivos(ND[index]),\
-                        "numeros_defectivos",\
+config_.append_function_values("testOneValuesFunction.test_Expectedvalue",\
+                        "Crear una funcion que multiplique dos números", \
+                        -1/2*2/5,\
+                        ("mul_lambda",[-1/2,2/5]) ,\
                         False)
 
-    config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                            "Comprobando si el 6 es un número es defectivo   ", \
-                            False,\
-                            numeros_defectivos(6),\
-                            "numeros_defectivos",\
-                            False)
 
 
-
-    runTest_v1(config_)
-
-
-except:
-  print("La función no ha sido definda o el numero de argumento no es el adecuado")
-  
-  #runTest_v1(config_)
-
-
+config_.append_function_values("testOneValuesFunction.test_Expectedvalue",\
+                        "Crear una funcion que sume dos números", \
+                        -1+2/5,\
+                        ("sum_int",[-1,2/5]) ,\
+                        False)
+runTest_v1(config_)
