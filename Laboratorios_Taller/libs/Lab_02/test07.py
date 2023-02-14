@@ -21,7 +21,7 @@ try:
     index = random.choice(range(len(NA)))
     
     config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                        f"Comprobando si el número {NA[index]} es amigo   ", \
+                        f"Comprobando si los números {NA[index]} son amigo   ", \
                         True,\
                         numeros_amigos(*NA[index]),\
                         "numeros_amigos",\
@@ -31,7 +31,7 @@ try:
     index_ = random.choice(range(len(NND)))
 
     config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                            f"Comprobando si  {NND[index_]} no es un número  amigo   ", \
+                            f"Comprobando si  {NND[index_]} no es número amigo   ", \
                             False,\
                             numeros_amigos(*NND[index_]),\
                             "numeros_amigos",\
