@@ -17,11 +17,11 @@ try:
                             
     
     
-    NA=[(220, 284), (1184, 1210), (2620, 2924), (5020, 5564), (6232, 6368), (10744, 10856), (17640, 14096), (6652, 5020), (15852, 5564), (8320, 7752)]
+    NA=[(220, 284), (1184, 1210), (2620, 2924), (5020, 5564), (6232, 6368), (10744, 10856), (12285, 14595), (17296, 18416), (63020, 76084) , (66928, 66992)]
     index = random.choice(range(len(NA)))
     
     config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                        f"Comprobando si los números {NA[index]} son amigo   ", \
+                        f"Comprobando si los números {NA[index]} son amigos   ", \
                         True,\
                         numeros_amigos(*NA[index]),\
                         "numeros_amigos",\
@@ -31,7 +31,7 @@ try:
     index_ = random.choice(range(len(NND)))
 
     config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                            f"Comprobando si  {NND[index_]} no es número amigo   ", \
+                            f"Comprobando si  {NND[index_]} no es un número amigo   ", \
                             False,\
                             numeros_amigos(*NND[index_]),\
                             "numeros_amigos",\
