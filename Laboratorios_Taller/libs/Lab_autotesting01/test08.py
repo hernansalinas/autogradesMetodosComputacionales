@@ -13,11 +13,19 @@ def pi_number_expected(k):
     val = val + (-1)**i *f    
   return 4*val
 
-config_.append_function("testOneOneFunction.test_Equalfunctions",\
-                      "Crear una funcion que calcule el numero pi", \
-                      ("pi_number_expected",[1000]),\
-                      ("pi_number",[1000]) ,\
-                      True, "")
+# config_.append_function("testOneOneFunction.test_Equalfunctions",\
+#                       "Crear una funcion que calcule el numero pi", \
+#                       ("pi_number_expected",[1000]),\
+#                       ("pi_number",[1000]) ,\
+#                       True, "")
+
+config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
+                          "Prueba para valores negativos ", \
+                          pi_number_expected(1000),\
+                          pi_number(1000),\
+                          "pi_number",\
+                          True)
+
 
 config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
                           "Prueba para valores negativos ", \
