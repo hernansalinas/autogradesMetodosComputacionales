@@ -26,7 +26,7 @@ try:
     config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
                             f"Para el número {x} su representacion es {y} ", \
                             y,\
-                            len(mybin(200)),\
+                            mybin(x),\
                             "mybin",\
                             False)
   
