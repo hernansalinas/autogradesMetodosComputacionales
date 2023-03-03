@@ -12,17 +12,18 @@ result = float(literal_eval(float_str))
 
 
 try:
+    b="0011111110001000000000000000000000000000000000000000000000000000"
     config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
                             "La salida debe ser un float ", \
                             type(2.0),\
-                            type(number64("1111111")),\
+                            type(number64(b)),\
                             "number64",\
                             False)
    
     config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
                             "Realizando prueba para un numero binario ", \
-                            result,\
-                            number64( '100000000111011100100001111111111111111111111111111111111111111'),\
+                            0.01171875,\
+                            number64(b)),\
                             "number64",\
                             True)
    
