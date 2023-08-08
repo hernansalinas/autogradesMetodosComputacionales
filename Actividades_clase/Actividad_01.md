@@ -6,3 +6,9 @@
 
 3. Crea una función llamada `binomial` que reciba dos parámetros llamados `n` y `k`. La función debe devolver el coeficiente binomial de `n` y `k`, que se define como el número de formas de elegir k elementos distintos de un conjunto de n elementos. Por ejemplo, si `n` es 5 y `k` es 3, la función debe devolver 10, ya que hay diez formas de elegir tres elementos distintos de un conjunto de cinco elementos. Llama a la función `binomial` con diferentes valores para los parámetros `n` y `k`, como 6 y 4, o 7 y 2.
 
+La entrega se realizará de dos formas:
+
+1. Creando un archivo de jupyter con extension actividad_01.ipynb.
+2. Creando un archivo llamado actividad_01.py,
+
+   
