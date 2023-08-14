@@ -9,8 +9,8 @@ config_.append_("testVariable.test_EqualSet","Definir una variable I tipo set", 
 
 try:
   config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                          "La longitud del set debe ser 10 ", \
-                          10,\
+                          "La longitud del set debe ser 7, notese que set no cuenta elementos repetidos ", \
+                          7,\
                           len(D),\
                           "D",
                           True)
