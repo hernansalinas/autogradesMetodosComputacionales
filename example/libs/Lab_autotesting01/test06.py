@@ -24,7 +24,7 @@ try:
                           "D",
                           True)
 
-  E1=set(np.arange(1,20,1))
+  E1=set(np.arange(1,21,1))
   config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
                             "20 primeros numeros naturales ", \
                             E1,\
