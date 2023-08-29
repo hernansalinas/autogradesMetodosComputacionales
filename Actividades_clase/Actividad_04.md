@@ -26,6 +26,7 @@ Ayuda :
 | df[df["columna"]== x] | Crea una máscara booleana y a la aplica al dataframe en caso de el valor de la columna coincida con la variable |
 
 
+
 Referencias: 
 
 - Dataset tomado y modificado de : https://www.kaggle.com/sudalairajkumar/daily-temperature-of-major-cities
