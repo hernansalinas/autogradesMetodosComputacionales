@@ -1,5 +1,5 @@
 
-Libraries description in bin folder
+Libreries description in bin folder
 
 
 To realized the unit test of any function, variable or result we need instance the object add_configuration, and use the follow methods:
