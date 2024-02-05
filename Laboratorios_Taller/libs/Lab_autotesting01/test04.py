@@ -46,7 +46,7 @@ try:
                           False)
   
 config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                          "La longitud de lista debe ser 9 ", \
+                          "La lista debe estar almacenada en la variable L_new ", \
                           "Hello World",\
                           L_new[5],\
                           "L_new",
