@@ -4,7 +4,7 @@ config_.append_("testVariable.test_Equalint","Definir x como un numero entero", 
 config_.append_("testVariable.test_Equalfloat","Defiir y como una variable tipo float", "y", False,"Recuerde definir el tipo adecuado empleando el metodo float")
 config_.append_("testVariable.test_Equalstring","Definir z como un string", "z", False,"Recuerde definir el tipo adecuado emplando dobles o simples comillas")
 config_.append_("testVariable.test_Equalfunctions","Definir mul_lambda como una funcion", "mul_lambda", False,"Recuerde definir la funcion")
-config_.append_("testVariable.test_Equalfunctions","Definir mul_int como una funcion", "mul_int", False,"Recuerde definir la funcion")
+config_.append_("testVariable.test_Equalfunctions","Definir sum_int como una funcion", "sum_int", False,"Recuerde definir la funcion")
 config_.append_("testVariable.test_Equalcomplex","Definir w como un número complejo", "w", False,"Recuerde definir el tipo adecuado")
 config_.append_("testVariable.test_Equalfloat","Determinar la parte imaginiaria de w", "w_img", False,"Recuerde definir el tipo adecuado")
 config_.append_("testVariable.test_Equalfloat","Determinar la parte real de w", "w_real", False,"Recuerde definir el tipo adecuado")

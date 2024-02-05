@@ -10,7 +10,7 @@ config_.append_("testVariable.test_EqualSet","Definir una variable I tipo set", 
 try:
   config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
                           "La longitud de D debe ser 10 ", \
-                          10,\
+                          11,\
                           len(D),\
                           "D",
                           True)
