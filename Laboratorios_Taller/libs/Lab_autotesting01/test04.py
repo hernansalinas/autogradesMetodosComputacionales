@@ -45,11 +45,13 @@ try:
                           ("L_par",[]),\
                           False)
   
-  config_.append_function_values("testOneValuesFunction.test_Expectedvaluevalue",\
-                          "Modificacion de elementos de la lista", \
+config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
+                          "La longitud de lista debe ser 9 ", \
+                          "Hello World",\
                           L_new[5],\
-                          ("L_new[5]",[]),\
-                          False)
+                          "L_new",
+                          True)
+
 
 
 
