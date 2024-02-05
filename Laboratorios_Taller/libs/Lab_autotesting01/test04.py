@@ -1,7 +1,7 @@
 config_ = add_configurations()
 
 config_.append_("testVariable.test_Equalint","Definir x como un numero entero", "x", False,"Recuerde definir el tipo adecuado empleando el metodo int")
-config_.append_("testVariable.test_Equalfloat","Defiir y como una variable tipo float", "y", False,"Recuerde definir el tipo adecuado empleando el metodo float")
+config_.append_("testVariable.test_Equalfloat","Definir y como una variable tipo float", "y", False,"Recuerde definir el tipo adecuado empleando el metodo float")
 config_.append_("testVariable.test_Equalstring","Definir z como un string", "z", False,"Recuerde definir el tipo adecuado emplando dobles o simples comillas")
 config_.append_("testVariable.test_Equalfunctions","Definir mul_lambda como una funcion", "mul_lambda", False,"Recuerde definir la funcion")
 config_.append_("testVariable.test_Equalfunctions","Definir sum_int como una funcion", "sum_int", False,"Recuerde definir la funcion")
@@ -22,15 +22,15 @@ try:
                           len(L),\
                           "L",
                           True)
-
+  
   #Comparacion con el resultado de una variable
+
+
   config_.append_function_values("testOneValuesFunction.test_Expectedvaluevalue",\
                           "Invierta la lista L", \
                           list(reversed(L)),\
                           ("L_reverse",[]),\
                           True)
-
-
 
   config_.append_function_values("testOneValuesFunction.test_Expectedvaluevalue",\
                           "Determine los valores impares de la lista", \
@@ -44,6 +44,13 @@ try:
                           L[0::2],\
                           ("L_par",[]),\
                           False)
+  
+  config_.append_function_values("testOneValuesFunction.test_Expectedvaluevalue",\
+                          "Modificacion de elementos de la lista", \
+                          L_new[5],\
+                          ("L_new[5]",[]),\
+                          False)
+
 
 
   runTest_v1(config_)
