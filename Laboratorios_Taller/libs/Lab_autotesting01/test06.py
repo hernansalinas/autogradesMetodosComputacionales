@@ -9,22 +9,23 @@ config_.append_("testVariable.test_EqualSet","Definir una variable I tipo set", 
 
 try:
   config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                          "La longitud de D debe ser 10 ", \
+                          "La longitud de D debe ser 11 ", \
                           11,\
                           len(D),\
                           "D",
                           True)
 
 
-  B1={1,-1/2,1/6,0,-1/30,0,1/42,0,-1/30,0,5/66}
+  
+  B1={2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31}
   config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
-                          "10 primeros números de Bernulli", \
+                          "11 primeros números de Bernulli", \
                           B1,\
                           D,\
                           "D",
                           True)
 
-  E1=set(np.arange(1,20,1))
+  E1=set(np.arange(1,21,1))
   config_.append_variables_values("testOneValuesVariables.test_Expectedvaluevalue",\
                             "20 primeros numeros naturales ", \
                             E1,\
