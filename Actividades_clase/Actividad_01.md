@@ -9,6 +9,9 @@
 La entrega se realizará de dos formas:
 
 1. Creando un archivo de jupyter con extension actividad_01.ipynb.
-2. Creando un archivo llamado actividad_01.py,
+2. Creando archivos llamados:
+    - actividad_01_doble_factorial.py,
+    - actividad_01_lucas.py
+    - actividad_01_binomial.py 
 
    
