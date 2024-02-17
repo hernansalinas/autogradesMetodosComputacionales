@@ -2,7 +2,7 @@
 
 
 
-1. Escribir un programa que pida al usuario dos números enteros y muestre por pantalla la <n> entre <m> da un cociente <c> y un resto <r> donde <n> y <m> son los números introducidos por el usuario, y <c> y <r> son el cociente y el resto de la división entera respectivamente.
+1. Escribir un programa que pida al usuario dos números enteros <n> , <m> y muestre por pantalla el  cociente <c> y el residuo  <r> entre <n> y <m>.
 
 2. Crea una función llamada `doble_factorial` que reciba un parámetro llamado `n`. La función debe devolver el doble factorial de `n`, que se define como el producto de todos los números naturales desde n hasta 1 que tienen el mismo paridad que n. Por ejemplo, si `n` es 5, la función debe devolver 15, que es el resultado de 5 x 3 x 1. Llama a la función `doble_factorial` con diferentes valores para el parámetro `n`, como 6, 7 o 8.
 
