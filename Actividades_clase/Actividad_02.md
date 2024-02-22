@@ -14,6 +14,11 @@ Se deberá entregar un archivo con extensión .ipynb llamado activdad_02 y una g
 2. Un jugador de baloncesto decide lanzar su balón a una distancia d del aro, con una   rapidez v y ángulo theta respecto a la horizontal. Si  la cesta tiene una altura de 3m, y el movimiento que realiza la pelota es un movimiento parabólico, construya un programa que determine si el jugador de baloncesto 
 encesto o no encesto. Para ello: 
 
+- Definido theta, vo, y d como archivo json,  se determine si el jugador encesto o no encesto.
+
+- Construir la gráfica del movimiento parabólico, para un theta, vo, y d, de tal forma que el jugador  enceste.
+
+
 ```python 
 import json
  
@@ -32,7 +37,3 @@ for i in data['emp_details']:
 # Closing file
 f.close()
 ```
-
-- Definido theta, vo, y d como archivo json,  se determine si el jugador encesto o no encesto.
-
-- Construir la gráfica del movimiento parabólico, para un theta, vo, y d, de tal forma que el jugador  enceste.
